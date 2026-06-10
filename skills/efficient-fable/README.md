@@ -8,7 +8,11 @@ edit. Fable keeps the hard calls: decomposition, architecture, product tradeoffs
 synthesis, risk, and final review. Lighter agents do the repeatable heavy
 passes.
 
-![Fable orchestrator diagram](assets/fable-orchestrator.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/fable-orchestrator-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/fable-orchestrator.png">
+  <img alt="Fable orchestrator diagram" src="assets/fable-orchestrator.png">
+</picture>
 
 ## What It Does
 
@@ -56,8 +60,10 @@ claim.
 Editable Excalidraw source:
 [`assets/fable-orchestrator.excalidraw`](assets/fable-orchestrator.excalidraw)
 
-Rendered PNG:
+Rendered PNGs:
 [`assets/fable-orchestrator.png`](assets/fable-orchestrator.png)
+and
+[`assets/fable-orchestrator-dark.png`](assets/fable-orchestrator-dark.png)
 
 ## Install
 

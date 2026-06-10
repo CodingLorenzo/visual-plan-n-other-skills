@@ -18,7 +18,11 @@ reduction.
 Solves for expensive-model waste: Fable should spend tokens on judgment, not on
 reading every file, reducing every log, or manually running every browser check.
 
-![Fable orchestrator diagram](skills/efficient-fable/assets/fable-orchestrator.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="skills/efficient-fable/assets/fable-orchestrator-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="skills/efficient-fable/assets/fable-orchestrator.png">
+  <img alt="Fable orchestrator diagram" src="skills/efficient-fable/assets/fable-orchestrator.png">
+</picture>
 
 ### [`/efficient-frontier`](skills/efficient-frontier/README.md)
 

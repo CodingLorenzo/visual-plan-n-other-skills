@@ -17,6 +17,45 @@ See the [full CLI docs below](#install).
 
 ## Skills
 
+### [`/visual-plan`](skills/visual-plan/README.md)
+
+Turn ordinary text plans into rich interactive visual plans with diagrams, file
+maps, annotated code, open questions, and UI/prototype review when useful.
+
+Solves for plans that are too important to bury in chat. The output is
+scannable, commentable, and intuitive enough for a human to approve before code
+changes start.
+
+<picture>
+  <img alt="Visual plan review surface" src="media/visual-plan.png">
+</picture>
+
+Visual plans are MDX, customizable with your own components, and are viewed with the [Agent-Native plans app](https://www.agent-native.com/docs/template-plan). [Source here](https://github.com/BuilderIO/agent-native/)
+
+### [`/visual-recap`](skills/visual-recap/README.md)
+
+Turn a branch, commit, or PR diff into an interactive visual recap with
+annotated diffs, diagrams, API/schema summaries, file maps, UI state summaries,
+and focused review notes.
+
+Solves for diffs that hide the shape of the change. Reviewers can understand
+contracts, architecture moves, schema changes, and UI impact before diving into
+raw line-by-line review.
+
+<picture>
+  <img alt="Visual recap review surface animation" src="media/visual-recap.gif">
+</picture>
+
+Visual recaps are MDX, customizable with your own components, and are viewed with the [Agent-Native plans app](https://www.agent-native.com/docs/template-plan). [Source here](https://github.com/BuilderIO/agent-native/)
+
+You can also install a GitHub action for these to be automatically generated for every PR with
+
+```sh
+npx @agent-native/skills@latest add
+```
+
+![Example of a visual plan posted to a PR](https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fcf9bac396cf24a4ba976fc331af6fc5d)
+
 ### [`/efficient-fable`](skills/efficient-fable/README.md)
 
 Use Claude Fable as the orchestrator, architect, synthesizer, and final judge
@@ -51,33 +90,6 @@ enough to continue.
 Solves for long-running agent sessions that accidentally exhaust the current
 budget window mid-task instead of pausing cleanly and resuming with a
 self-contained plan.
-
-### [`/visual-plan`](skills/visual-plan/README.md)
-
-Turn ordinary text plans into rich interactive visual plans with diagrams, file
-maps, annotated code, open questions, and UI/prototype review when useful.
-
-Solves for plans that are too important to bury in chat. The output is
-scannable, commentable, and intuitive enough for a human to approve before code
-changes start.
-
-<picture>
-  <img alt="Visual plan review surface" src="media/visual-plan.png">
-</picture>
-
-### [`/visual-recap`](skills/visual-recap/README.md)
-
-Turn a branch, commit, or PR diff into an interactive visual recap with
-annotated diffs, diagrams, API/schema summaries, file maps, UI state summaries,
-and focused review notes.
-
-Solves for diffs that hide the shape of the change. Reviewers can understand
-contracts, architecture moves, schema changes, and UI impact before diving into
-raw line-by-line review.
-
-<picture>
-  <img alt="Visual recap review surface animation" src="media/visual-recap.gif">
-</picture>
 
 ### [`/quick-recap`](skills/quick-recap/README.md)
 

@@ -8,9 +8,17 @@ custom components built for understanding: architecture diagrams, wireframes,
 interactive prototypes, file maps, annotated code, OpenAPI-style API specs,
 visual schema maps, open questions, and comments.
 
+It solves for plans that are too important to bury in chat. The output is
+scannable, commentable, and intuitive enough for a human to approve before code
+changes start.
+
 <picture>
   <img alt="Visual plan review surface" src="../../media/visual-plan.png">
 </picture>
+
+Visual plans are MDX, customizable with your own components, and viewed with the
+[Agent-Native plans app](https://www.agent-native.com/docs/template-plan).
+[Source here](https://github.com/BuilderIO/agent-native/).
 
 ## What It Does
 
@@ -37,6 +45,10 @@ Reviewers get a plan link that is built for scanning. Decisions, files,
 diagrams, contracts, UI states, prototype behavior, schema shape, API boundaries,
 and unresolved questions live in one consumable place.
 
+For teams wiring visual plans into their review flow, the
+[Plan app documentation](https://www.agent-native.com/docs/template-plan)
+explains how the review surface is rendered and shared.
+
 The point is not just prettier planning. It is a better medium for human review:
 visual where visuals help, structured where structure helps, and grounded in the
 actual codebase.
@@ -47,4 +59,4 @@ actual codebase.
 npx @agent-native/skills@latest add --skill visual-plan
 ```
 
-The skill expects the Plan MCP connector to be available when it is used.
+The skill expects the [Plan MCP connector](https://www.agent-native.com/docs/template-plan) to be available when it is used.

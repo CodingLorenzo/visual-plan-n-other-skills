@@ -75,6 +75,14 @@ produce separate strategies. The output is a decision memo with the winning or
 hybrid plan, rejected alternatives, verification gates, and executor
 recommendation.
 
+### [`/plow-ahead`](skills/plow-ahead/README.md)
+
+Keep working through ordinary ambiguity and finish with a clear decision recap.
+
+Solves for explicit autonomy requests: the agent converts routine questions into
+assumptions, proceeds with conservative choices, validates the work, and recaps
+the decisions it made without stopping.
+
 ### [`/efficient-fable`](skills/efficient-fable/README.md)
 
 Use Claude Fable as the orchestrator, architect, synthesizer, and final judge

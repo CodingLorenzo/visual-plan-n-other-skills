@@ -1,29 +1,22 @@
 # Contributing to BuilderIO/skills
 
-Thank you for your interest in contributing! We welcome contributors of all types — code, tests, documentation, and design — and appreciate your time and effort.
-
-This document explains how to report issues, propose changes, and get your pull requests reviewed and merged quickly.
+Thank you for your interest in contributing! We welcome contributors of all types — code, tests, documentation, and design — and appreciate your time and effort. This document explains how to report issues, propose changes, and get your pull requests reviewed and merged quickly.
 
 ---
 
 ## Table of contents
-
 - [How can I contribute?](#how-can-i-contribute)
 - [Code of conduct](#code-of-conduct)
 - [Filing issues](#filing-issues)
 - [Proposing changes (pull requests)](#proposing-changes-pull-requests)
 - [Development setup](#development-setup)
-- [Verifying changes](#verifying-changes)
-- [Code style & commit messages](#code-style--commit-messages)
-- [Review process & expectations](#review-process--expectations)
-- [License](#license)
+- [Repository Workflows & Checks](#repository-workflows--checks)
 
 ---
 
 ## How can I contribute?
 
 You can help in many ways:
-
 - Report bugs with a minimal reproducible example.
 - Add or improve documentation and skill guidelines.
 - Fix bugs and implement small features via PRs.
@@ -38,7 +31,6 @@ This project follows an inclusive code of conduct. Please be respectful and cons
 ## Filing issues
 
 When filing an issue, please include:
-
 - A clear, descriptive title.
 - A concise description of the problem or request.
 - Steps to reproduce (minimum reproducible example preferred).
@@ -56,24 +48,19 @@ Follow these steps to propose changes:
 
 1. Fork the repository and create a branch with a descriptive name (e.g. `fix/missing-docs` or `feat/new-skill`).
 2. Keep changes small and focused — one logical change per PR. Smaller PRs get reviewed faster.
-3. Update or add necessary documentation for your change. 
-4. Run `npm run check` and make sure it passes locally before committing.
+3. Update or add necessary documentation for your change.
+4. Run the local checks and make sure they pass before committing.
 5. Open a pull request with a clear title and a short summary. Use this structure in the PR body:
-
    - Summary (one-line)
    - Why (why this change is needed)
    - What changed (bullet list)
    - How to test (steps)
    - Notes (migrations, breaking changes)
+6. Request reviews from specific maintainers or teams and explain what you want reviewed (logic, tests, docs). We recommend creating draft PRs for early feedback on larger changes.
 
-6. Request reviews from specific maintainers or teams and explain what you want reviewed (logic, tests, docs).
+## Development Setup
 
-We recommend creating draft PRs for early feedback on larger changes.
-
-## Development setup
-
-1. Clone and install dependencies:
+1. Clone this repository:
    ```bash
-   git clone [https://github.com/BuilderIO/skills.git](https://github.com/BuilderIO/skills.git)
+   git clone https://github.com/BuilderIO/skills.git
    cd skills
-   npm install

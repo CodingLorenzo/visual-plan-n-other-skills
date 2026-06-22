@@ -5,18 +5,21 @@ Thank you for your interest in contributing! We welcome contributors of all type
 ---
 
 ## Table of contents
+
 - [How can I contribute?](#how-can-i-contribute)
 - [Code of conduct](#code-of-conduct)
 - [Filing issues](#filing-issues)
 - [Proposing changes (pull requests)](#proposing-changes-pull-requests)
 - [Development setup](#development-setup)
-- [Repository Workflows & Checks](#repository-workflows--checks)
+- [Repository workflows & checks](#repository-workflows--checks)
+- [License](#license)
 
 ---
 
 ## How can I contribute?
 
 You can help in many ways:
+
 - Report bugs with a minimal reproducible example.
 - Add or improve documentation and skill guidelines.
 - Fix bugs and implement small features via PRs.
@@ -31,6 +34,7 @@ This project follows an inclusive code of conduct. Please be respectful and cons
 ## Filing issues
 
 When filing an issue, please include:
+
 - A clear, descriptive title.
 - A concise description of the problem or request.
 - Steps to reproduce (minimum reproducible example preferred).
@@ -56,11 +60,69 @@ Follow these steps to propose changes:
    - What changed (bullet list)
    - How to test (steps)
    - Notes (migrations, breaking changes)
-6. Request reviews from specific maintainers or teams and explain what you want reviewed (logic, tests, docs). We recommend creating draft PRs for early feedback on larger changes.
+6. Request reviews from specific maintainers or teams and explain what you want reviewed (logic, tests, docs).
 
-## Development Setup
+We recommend creating draft PRs for early feedback on larger changes.
+
+## Development setup
 
 1. Clone this repository:
    ```bash
    git clone https://github.com/BuilderIO/skills.git
    cd skills
+   npm install
+   ```
+
+2. Set up the agent-native framework path:
+
+   On Windows (Command Prompt):
+   ```bash
+   git clone https://github.com/BuilderIO/agent-native.git ../agent-native
+   set AGENT_NATIVE_FRAMEWORK_PATH=../agent-native
+   ```
+   On Mac/Linux or PowerShell:
+   ```bash
+   git clone https://github.com/BuilderIO/agent-native.git ../agent-native
+   export AGENT_NATIVE_FRAMEWORK_PATH=../agent-native
+   ```
+
+   This environment variable is required for local checks to work properly. The skills repository depends on code from BuilderIO/agent-native, which is cloned separately rather than installed as a package.
+
+## Repository workflows & checks
+
+Before pushing your changes, verify everything works locally:
+```bash
+npm run check
+```
+
+This command runs the sync and validation checks specific to the skills repository. All checks must pass before submitting a pull request.
+
+What `npm run check` does:
+
+   - Syncs skill definitions with the agent-native visual plans
+   - Validates skill structure and configuration
+   - Ensures all changes are compatible with the agent-native framework
+
+If the check fails, review the error messages and fix the issues before committing.
+
+## Code style & commit messages
+
+   1. Use clear, descriptive commit messages explaining the "why" behind your changes.
+   2. Keep commits atomic — one logical change per commit.
+   3. Follow the PR structure outlined above (Summary, Why, What changed, How to test).
+   4. Ensure code is readable and well-documented.
+   5. Review the existing codebase to match the project's style conventions.
+
+## Review process & expectations
+
+   1. Submit a pull request with a clear description and meaningful title.
+   2. At least one maintainer review is required before merging.
+   3. All CI checks must pass (`npm run check` and GitHub Actions workflows).
+   4. Address feedback promptly and mark conversations as resolved.
+   5. Maintainers will provide feedback within 3–5 business days.
+
+We appreciate your patience and collaboration throughout the review process!
+
+## License
+
+This project is licensed under the terms specified in the [LICENSE](./LICENSE) file in the repository root.

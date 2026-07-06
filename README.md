@@ -2,6 +2,8 @@
 
 Small, composable skills for coding agents.
 
+Local visual-plan mode writes and serves MDX locally; it must not upload the plan to the hosted database first.
+
 ### Quick install recommended skills
 
 ```sh
@@ -39,7 +41,7 @@ changes start.
   <img alt="Visual plan review surface" src="media/visual-plan.png">
 </picture>
 
-Visual plans are MDX, customizable with your own components, and are viewed with the [Agent-Native plans app](https://www.agent-native.com/docs/template-plan). [Source here](https://github.com/BuilderIO/agent-native/)
+Visual plans are MDX, customizable with your own components, and are viewed with the [Agent-Native plans app](https://www.agent-native.com/docs/template-plan). In local-files mode, `/visual-plan` writes and serves MDX locally through a localhost bridge instead of uploading plan content to the hosted database. [Source here](https://github.com/BuilderIO/agent-native/)
 
 ### [`/visual-recap`](skills/visual-recap/README.md)
 

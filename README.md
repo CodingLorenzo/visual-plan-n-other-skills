@@ -2,16 +2,13 @@
 
 Small, composable skills for coding agents.
 
-Local visual-plan mode writes and serves MDX locally; it must not upload the plan to the hosted database first.
-
 ### Quick install recommended skills
 
 ```sh
 npx @agent-native/skills@latest add
 ```
 
-The interactive picker puts `/visual-plan` and `/visual-recap` first and selects
-only those by default. See the [full CLI docs below](#install).
+See the [full CLI docs below](#install).
 
 ## Skills At A Glance
 
